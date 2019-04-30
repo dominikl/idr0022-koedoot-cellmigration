@@ -1,0 +1,8 @@
+---
+continue: "true"
+transfer: "ln_s"
+skip: "all"
+parallel_upload: "50"
+columns:
+    - name
+    - path
