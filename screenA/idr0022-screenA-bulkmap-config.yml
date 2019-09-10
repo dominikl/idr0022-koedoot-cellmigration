@@ -1,0 +1,90 @@
+---
+name: idr0022-koedoot-cellmigration/screenA
+version: 1
+
+defaults:
+  # Should the column be processed when creating bulk-annotations (yes/no)
+  include: false
+  # Columns type of the bulk-annotations column
+  type: string
+
+  # If non-empty a string used to separate multiple fields in a column
+  # White space will be stripped
+  split: ","
+  # Should this column be included in the clients (yes/no)
+  includeclient: true
+  # Should this column be visible in the clients, if no the column should be
+  # hidden in the client but will still be indexed by the searcher (yes/no)
+  visible: true
+  # Should empty values be omitted from the client display
+  omitempty: true
+
+columns:
+
+  - name: Control Type
+    clientname: Control Type
+    include: true
+
+  - name: Reagent Identifier
+    clientname: Reagent Identifier
+    include: true
+
+  - name: Library
+    clientname: Library
+    include: true
+
+
+  ######################################################################
+  # mapr groups
+  ######################################################################
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics [Organism]
+          clientname: Organism
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/cell_line
+      columns:
+        - name: Characteristics [Cell Line]
+          clientname: Cell Line
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Gene Symbol
+          include: true
+        - name: Gene Identifier
+          include: true
+        - name: Gene Identifier
+          clientname: Gene Identifier URL
+          clientvalue: https://www.ncbi.nlm.nih.gov/gene/{{ value|urlencode }}
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene/supplementary
+      columns:
+        - name: RefSeq Accession
+          clientname: RefSeq Accession
+          include: true
+        - name: RefSeq GI Number
+          clientname: RefSeq GI Number
+          include: true
+
+advanced:
+  well_to_images: true
+  ignore_missing_primary_key: true
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
+    - namespace: openmicroscopy.org/mapr/cell_line
+      keys:
+        - Cell Line
+    - namespace: openmicroscopy.org/mapr/gene
+      keys:
+        - Gene Identifier
+        - Gene Symbol
