@@ -208,7 +208,7 @@ Processed Data Column Description
 Processed Data Column Link To Library File					
 					
 					
-Screen Data 2					
+Screen Number	2					
 					
 Comment[IDR Screen Name]	idr0022-koedoot-cellmigration/screenB				
 					
