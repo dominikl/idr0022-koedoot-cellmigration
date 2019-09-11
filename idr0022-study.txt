@@ -5,7 +5,7 @@
 					
 Comment[IDR Study Accession]	idr0022				
 					
-Study Title	Uncovering the signaling landscape controlling breast cancer cell migration identifies novel metastasis driver genes				
+Study Title	Uncovering the signaling landscape controlling breast cancer cell migration identifies novel metastasis driver genes.				
 					
 Study Type	high content screen				
 
@@ -32,7 +32,7 @@ Study Public Release Date
 					
 Study PubMed ID	31278301				
 					
-Study Publication Title	Uncovering the signaling landscape controlling breast cancer cell migration identifies novel metastasis driver genes				
+Study Publication Title	Uncovering the signaling landscape controlling breast cancer cell migration identifies novel metastasis driver genes.				
 					
 Study Author List	Koedoot E, Fokkelman M, Rogkoti VM, Smid M, van de Sandt I, de Bont H, Pont C, Klip JE, Wink S, Timmermans MA, Wiemer EAC, Stoilov P, Foekens JA, Le Dévédec SE, Martens JWM, van de Water B				
 					
@@ -84,6 +84,8 @@ Comment[IDR Screen Name]	idr0022-koedoot-cellmigration/screenA
 					
 Screen Sample Type	cell				
 					
+Screen Data Publisher	University of Dundee				
+Screen Data DOI					
 Screen Description	Primary RNAi screen using 4198 smartpool siRNAs to identify cell migratory regulators in Hs578T and MDA-MB-231 triple-negative breast cancer cells. 				
 					
 Screen Size	Plates: 	5D Images: 	Planes: 	Average Image Dimension (XYZCT): 	Total Tb: 
@@ -214,6 +216,8 @@ Comment[IDR Screen Name]	idr0022-koedoot-cellmigration/screenB
 					
 Screen Sample Type	cell				
 					
+Screen Data Publisher	University of Dundee				
+Screen Data DOI					
 Screen Description	Validation RNAi screen using smartpool and single siRNAs to validate cell migratory regulators in Hs578T and MDA-MB-231 cells that were identified in the primary screen. 				
 					
 Screen Size	Plates: 	5D Images: 	Planes: 	Average Image Dimension (XYZCT): 	Total Tb: 
